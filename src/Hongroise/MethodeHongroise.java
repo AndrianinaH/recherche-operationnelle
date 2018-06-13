@@ -110,33 +110,37 @@ public class MethodeHongroise {
     //----------------------------- Final
     public void methodeHongroise(List<List<Case>> tabs){
         //------------- Etape 0
-        List<List<Case>> tableauSous =  this.soustraireMin(tabs);
-        this.afficherTableau(tableauSous);
+        List<List<Case>> tableau =  this.soustraireMin(tabs);
+        this.afficherTableau(tableau);
 
         //------------- Etape 1
-        this.encadrerZero(tableauSous);
-        this.afficherTableau(tableauSous);
+        this.encadrerZero(tableau);
+        this.afficherTableau(tableau);
 
-        if(this.isFinish(tableauSous)){
+        if(this.isFinish(tableau)){
             System.out.println("vita");
         }else{
             //------------ Etape 2
             System.out.println("tsy vita miditra Etape 2");
-            this.marquer(tableauSous);
-            this.afficherTableau(tableauSous);
+            this.marquer(tableau);
+            this.afficherTableau(tableau);
 
             //------------ Etape 3
-            this.rayer(tableauSous);
-            this.afficherTableau(tableauSous);
+            this.rayer(tableau);
+            this.afficherTableau(tableau);
 
-            int minSousTableauRestant = this.getMinSousTableauRestant(tabs);
+            int minSousTableauRestant = this.getMinSousTableauRestant(tableau);
             System.out.println(minSousTableauRestant);
 
-            this.soustraireMinAuTableauRestant(tableauSous,minSousTableauRestant);
-            this.afficherTableau(tableauSous);
+            this.soustraireMinAuTableauRestant(tableau,minSousTableauRestant);
+            this.afficherTableau(tableau);
 
-            this.ajouterMinAuCaseMarquer2(tableauSous,minSousTableauRestant);
-            this.afficherTableau(tableauSous);
+            this.ajouterMinAuCaseMarquer2(tableau,minSousTableauRestant);
+            this.reninitMarquage(tableau);
+            this.afficherTableau(tableau);
+
+            //--------------- refaire jusqu'à arriver à "vita"
+            this.methodeHongroise(tableau);
         }
     }
 
@@ -242,9 +246,7 @@ public class MethodeHongroise {
     // Sinon, on passe à l'étape 2.
     public boolean isFinish(List<List<Case>> tabs){
         for(int i = 0; i < this.init; i++){
-            for(int j = 0; j < this.init; j++){
-                if(!isFinishLine(tabs,i) && !isFinishColonne(tabs,j)) return false;
-            }
+            if(!isFinishLine(tabs,i) && !isFinishColonne(tabs,i)) return false;
         }
         return true;
     }
@@ -359,7 +361,6 @@ public class MethodeHongroise {
         if(testColonneRayable(tabs,col)){
             for(int i = 0; i < this.init; i++){
                 if(tabs.get(i).get(col).isRayer()){
-                    System.out.println("i= "+i+" col= "+col);
                     tabs.get(i).get(col).setRayer2(true);
                 }else{
                     tabs.get(i).get(col).setRayer(true);
@@ -415,6 +416,7 @@ public class MethodeHongroise {
             }
         }
     }
+
     //-------------- reninialize les marquages
     public void reninitMarquage(List<List<Case>> tabs){
         for(int i = 0; i < this.init; i++){
