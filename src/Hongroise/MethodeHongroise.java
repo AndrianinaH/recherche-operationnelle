@@ -128,6 +128,15 @@ public class MethodeHongroise {
             //------------ Etape 3
             this.rayer(tableauSous);
             this.afficherTableau(tableauSous);
+
+            int minSousTableauRestant = this.getMinSousTableauRestant(tabs);
+            System.out.println(minSousTableauRestant);
+
+            this.soustraireMinAuTableauRestant(tableauSous,minSousTableauRestant);
+            this.afficherTableau(tableauSous);
+
+            this.ajouterMinAuCaseMarquer2(tableauSous,minSousTableauRestant);
+            this.afficherTableau(tableauSous);
         }
     }
 
@@ -136,7 +145,7 @@ public class MethodeHongroise {
     //Soustraire le minimum de chaque ligne et le minimum de chaque colonne.
 
     public List<List<Case>> soustraireMin(List<List<Case>> tabInitial){
-        List<List<Case>> tableauSous = this.getTableauInitiale();
+        List<List<Case>> tableauSous = tabInitial;
 
         //------------ soustraire min line
         for (int i = 0; i<this.init; i++) {
@@ -311,7 +320,7 @@ public class MethodeHongroise {
     }
 
     //----------------------------- Etape 3 :
-    //ETAPE III : Mise à jour du tableau
+    //Mise à jour du tableau
     // 1. Rayer les lignes non marquées et les colonnes marquées,
     // 2. Retrancher le plus petit élément du sous-tableau restant à tous
     // les  éléments non rayés et ajouter le aux éléments rayés 2 fois.
@@ -319,16 +328,16 @@ public class MethodeHongroise {
     public void rayer(List<List<Case>> tabs){
 
         for(int i = 0; i < this.init; i++){
-            for(int j = 0; j < this.init; j++){
-                //-------- rayer lignes non marquées
-                rayerLigne(tabs,i);
-                //------- rayer les colonnes marquées
-                rayerColonne(tabs,j);
-            }
+            //-------- rayer lignes non marquées
+            rayerLigne(tabs,i);
+        }
+        for (int j = 0; j < this.init; j++){
+            //------- rayer les colonnes marquées
+            rayerColonne(tabs,j);
         }
     }
 
-    //-------- Rayer les ligne
+    //-------- Rayer les ligne 3.1.1
     public void rayerLigne(List<List<Case>> tabs, int line){
         if(testLigneRayable(tabs,line)){
             for(int i = 0; i < this.init; i++){
@@ -345,11 +354,12 @@ public class MethodeHongroise {
         return false;
     }
 
-    //-------- Rayer les colonnes
+    //-------- Rayer les colonnes 3.1.2
     public void rayerColonne(List<List<Case>> tabs, int col){
         if(testColonneRayable(tabs,col)){
             for(int i = 0; i < this.init; i++){
                 if(tabs.get(i).get(col).isRayer()){
+                    System.out.println("i= "+i+" col= "+col);
                     tabs.get(i).get(col).setRayer2(true);
                 }else{
                     tabs.get(i).get(col).setRayer(true);
@@ -369,8 +379,53 @@ public class MethodeHongroise {
     //Retrancher le plus petit élément du sous-tableau restant à tous
     // les  éléments non rayés
 
-    //get min sous tableau restant
+    //get min sous tableau restant 3.2
     public int getMinSousTableauRestant(List<List<Case>> tabs){
-        
+        int ret = 1000000;
+        for(int i = 0; i < this.init; i++){
+            for(int j = 0; j < this.init; j++){
+                if(!tabs.get(i).get(j).isRayer()) {
+                    if (ret > tabs.get(i).get(j).getValue()) ret = tabs.get(i).get(j).getValue();
+                }
+            }
+        }
+        return ret;
     }
+
+    //soustrait le min au sous tableau restant 3.2
+    public void soustraireMinAuTableauRestant(List<List<Case>> tabs, int min){
+        List<List<Case>> tabTemp = tabs;
+        for(int i = 0; i < this.init; i++){
+            for(int j = 0; j < this.init; j++){
+                if(!tabs.get(i).get(j).isRayer()) {
+                    tabs.get(i).get(j).setValue(tabTemp.get(i).get(j).getValue()- min);
+                }
+            }
+        }
+    }
+
+    //ajouter le min au case doublement marqué 3.2
+    public void ajouterMinAuCaseMarquer2(List<List<Case>> tabs, int min){
+        List<List<Case>> tabTemp = tabs;
+        for(int i = 0; i < this.init; i++){
+            for(int j = 0; j < this.init; j++){
+                if(tabs.get(i).get(j).isRayer2()) {
+                    tabs.get(i).get(j).setValue(tabTemp.get(i).get(j).getValue()+ min);
+                }
+            }
+        }
+    }
+    //-------------- reninialize les marquages
+    public void reninitMarquage(List<List<Case>> tabs){
+        for(int i = 0; i < this.init; i++){
+            for(int j = 0; j < this.init; j++){
+                tabs.get(i).get(j).setEncader(false);
+                tabs.get(i).get(j).setBarrer(false);
+                tabs.get(i).get(j).setMarquer(false);
+                tabs.get(i).get(j).setRayer(false);
+                tabs.get(i).get(j).setRayer2(false);
+            }
+        }
+    }
+
 }

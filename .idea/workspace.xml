@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485bf684-bec7-45c1-9dd1-5a8bedc1200c" name="Default" comment="" />
+    <list default="true" id="485bf684-bec7-45c1-9dd1-5a8bedc1200c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Hongroise/MethodeHongroise.class" afterPath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Hongroise/MethodeHongroise.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Hongroise/MethodeHongroise.java" afterPath="$PROJECT_DIR$/src/Hongroise/MethodeHongroise.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,18 +29,16 @@
       <file leaf-file-name="MethodeHongroise.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Hongroise/MethodeHongroise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1928">
-              <caret line="373" column="8" lean-forward="false" selection-start-line="373" selection-start-column="8" selection-end-line="373" selection-end-column="8" />
+            <state relative-caret-position="34">
+              <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MethodeHongroise#1;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#setTableauInitiale#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#afficherTableau#0;class#MethodeHongroise#0" expanded="false" />
-                <element signature="method#soustraireMin#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#getMin#0;class#MethodeHongroise#0" expanded="false" />
-                <element signature="method#reverseTableau#0;class#MethodeHongroise#0" expanded="false" />
-                <element signature="e#5882#5894#0" expanded="true" />
-                <element signature="e#5989#5995#0" expanded="true" />
+                <element signature="e#6257#6269#0" expanded="true" />
+                <element signature="e#6364#6370#0" expanded="true" />
                 <element signature="method#encadrerZero#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#ligneEncadrable#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#barrerZeroLigne#0;class#MethodeHongroise#0" expanded="false" />
@@ -44,6 +46,7 @@
                 <element signature="method#isFinish#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#isFinishLine#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#isFinishColonne#0;class#MethodeHongroise#0" expanded="false" />
+                <element signature="method#marquer#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#marquerColonne#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#marquerLigne#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#rayer#0;class#MethodeHongroise#0" expanded="false" />
@@ -51,6 +54,10 @@
                 <element signature="method#testLigneRayable#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#rayerColonne#0;class#MethodeHongroise#0" expanded="false" />
                 <element signature="method#testColonneRayable#0;class#MethodeHongroise#0" expanded="false" />
+                <element signature="method#getMinSousTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
+                <element signature="method#soustraireMinAuTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
+                <element signature="method#ajouterMinAuCaseMarquer2#0;class#MethodeHongroise#0" expanded="false" />
+                <element signature="method#reninitMarquage#0;class#MethodeHongroise#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,8 +66,8 @@
       <file leaf-file-name="Case.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Hongroise/Case.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="71">
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -91,6 +98,9 @@
       <find>setValue(</find>
       <find>isMarquer</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -129,6 +139,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -144,7 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,7 +238,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -784,12 +795,13 @@
       <workItem from="1528737436517" duration="8661000" />
       <workItem from="1528789251844" duration="4082000" />
       <workItem from="1528796174081" duration="18298000" />
-      <workItem from="1528821713008" duration="4410000" />
+      <workItem from="1528821713008" duration="8437000" />
+      <workItem from="1528876845230" duration="1746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108239000" />
+    <option name="totallyTimeSpent" value="114012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
@@ -804,20 +816,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38619202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28277355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2145144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21664888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49187434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15102482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -848,7 +860,7 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1276,26 +1288,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hongroise/Case.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="71">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Hongroise/MethodeHongroise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1928">
-          <caret line="373" column="8" lean-forward="false" selection-start-line="373" selection-start-column="8" selection-end-line="373" selection-end-column="8" />
+        <state relative-caret-position="34">
+          <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MethodeHongroise#1;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#setTableauInitiale#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#afficherTableau#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#soustraireMin#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#getMin#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#reverseTableau#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="e#5882#5894#0" expanded="true" />
-            <element signature="e#5989#5995#0" expanded="true" />
+            <element signature="e#6257#6269#0" expanded="true" />
+            <element signature="e#6364#6370#0" expanded="true" />
             <element signature="method#encadrerZero#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#ligneEncadrable#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#barrerZeroLigne#0;class#MethodeHongroise#0" expanded="false" />
@@ -1303,6 +1313,7 @@
             <element signature="method#isFinish#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#isFinishLine#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#isFinishColonne#0;class#MethodeHongroise#0" expanded="false" />
+            <element signature="method#marquer#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#marquerColonne#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#marquerLigne#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#rayer#0;class#MethodeHongroise#0" expanded="false" />
@@ -1310,6 +1321,10 @@
             <element signature="method#testLigneRayable#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#rayerColonne#0;class#MethodeHongroise#0" expanded="false" />
             <element signature="method#testColonneRayable#0;class#MethodeHongroise#0" expanded="false" />
+            <element signature="method#getMinSousTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
+            <element signature="method#soustraireMinAuTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
+            <element signature="method#ajouterMinAuCaseMarquer2#0;class#MethodeHongroise#0" expanded="false" />
+            <element signature="method#reninitMarquage#0;class#MethodeHongroise#0" expanded="false" />
           </folding>
         </state>
       </provider>
