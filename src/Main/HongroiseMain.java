@@ -14,17 +14,29 @@ public class HongroiseMain {
 
         //-------------- initialisation
         MethodeHongroise methodeHongroise = new MethodeHongroise();
+//        int[][] tab = new int[][]{
+//            {1,2,3,4,5},
+//            {1,4,2,5,3},
+//            {3,2,1,5,4},
+//            {1,2,3,5,4},
+//            {2,1,4,3,5}
+//        };
         int[][] tab = new int[][]{
-            {1,2,3,4,5},
-            {1,4,2,5,3},
-            {3,2,1,5,4},
-            {1,2,3,5,4},
-            {2,1,4,3,5}
+                {17,15,9,5,12},
+                {16,16,10,5,10},
+                {12,15,14,11,5},
+                {4,8,14,17,13},
+                {13,9,8,12,17}
         };
         methodeHongroise.setTableauInitiale(tab);
         methodeHongroise.afficherTableau(methodeHongroise.getTableauInitiale());
 
-        methodeHongroise.methodeHongroise(methodeHongroise.getTableauInitiale());
+        //----------- minimisation
+//        methodeHongroise.minimisationAffectation(methodeHongroise.getTableauInitiale());
+
+        //----------- maximisation
+        methodeHongroise.maximisationAffectation(methodeHongroise.getTableauInitiale());
+
 
 
     }

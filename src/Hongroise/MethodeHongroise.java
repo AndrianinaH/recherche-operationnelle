@@ -1,6 +1,6 @@
 package Hongroise;
 
-import javafx.scene.control.Tab;
+import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,18 +10,15 @@ import java.util.List;
  */
 public class MethodeHongroise {
 
-    private List<List<Case>> tableauInitiale;
+    private List<List<Case>> tableauInitiale = new ArrayList<List<Case>>();;
     private int init = 5;
 
 
     //------------------------------- Initialisation
-    public MethodeHongroise(){
-        this.tableauInitiale = new ArrayList<List<Case>>();
-    }
+    public MethodeHongroise(){}
 
     public MethodeHongroise(int init){
         this.init = init;
-        this.tableauInitiale = new ArrayList<List<Case>>();
     }
 
     public void setTableauInitiale(int[][] tab) {
@@ -108,17 +105,34 @@ public class MethodeHongroise {
     }
 
     //----------------------------- Final
+
+    //------------- minimisation
+    public void minimisationAffectation(List<List<Case>> tabs){
+        this.methodeHongroise(tabs);
+    }
+    //------------- maximisation
+    public void maximisationAffectation(List<List<Case>> tabs){
+        List<List<Case>> tabOpposer = this.getTabOpposer(tabs);
+        this.methodeHongroise(tabOpposer);
+    }
+
     public void methodeHongroise(List<List<Case>> tabs){
         //------------- Etape 0
         List<List<Case>> tableau =  this.soustraireMin(tabs);
         this.afficherTableau(tableau);
-
         //------------- Etape 1
         this.encadrerZero(tableau);
         this.afficherTableau(tableau);
 
         if(this.isFinish(tableau)){
             System.out.println("vita");
+            this.afficherTableau(tableau);
+            System.out.println("tableau initiale");
+            this.afficherTableau(this.tableauInitiale);
+            //--------------- get cout minimum
+            List<Result> result = this.getResult(tableau);
+            int coutMinimalAffecation = this.getCoutMinimal(result);
+            System.out.println("Cout minimal de l'affectation est : "+ coutMinimalAffecation);
         }else{
             //------------ Etape 2
             System.out.println("tsy vita miditra Etape 2");
@@ -130,7 +144,7 @@ public class MethodeHongroise {
             this.afficherTableau(tableau);
 
             int minSousTableauRestant = this.getMinSousTableauRestant(tableau);
-            System.out.println(minSousTableauRestant);
+            System.out.println("min sous tableau restant= "+minSousTableauRestant);
 
             this.soustraireMinAuTableauRestant(tableau,minSousTableauRestant);
             this.afficherTableau(tableau);
@@ -149,8 +163,7 @@ public class MethodeHongroise {
     //Soustraire le minimum de chaque ligne et le minimum de chaque colonne.
 
     public List<List<Case>> soustraireMin(List<List<Case>> tabInitial){
-        List<List<Case>> tableauSous = tabInitial;
-
+        List<List<Case>> tableauSous = this.copieList(tabInitial);
         //------------ soustraire min line
         for (int i = 0; i<this.init; i++) {
             Case minLine = getMin(tabInitial.get(i));
@@ -192,6 +205,19 @@ public class MethodeHongroise {
         }
         tabs.clear();
         tabs.addAll(tableauRet);
+    }
+
+    //----------- copier List dans une autre list
+    public List<List<Case>> copieList(List<List<Case>> tabs){
+        List<List<Case>> tableauRet = new ArrayList<List<Case>>();
+        for (int i = 0; i<this.init; i++) {
+            List<Case> tempList = new ArrayList<Case>();
+            for(int j = 0; j<this.init; j++){
+                tempList.add(tabs.get(i).get(j));
+            }
+            tableauRet.add(tempList);
+        }
+       return tableauRet;
     }
 
     //----------------------------- Etape 1 :
@@ -429,5 +455,62 @@ public class MethodeHongroise {
             }
         }
     }
+
+
+    //--------------------------- Coût minimum de l'affectation
+
+    //get result by coordonnée 0 encadrer
+    public List<Result> getResult(List<List<Case>> tabs){
+        List<Result> list_ret = new ArrayList<Result>();
+        for(int i = 0; i < this.init; i++){
+            for(int j = 0; j < this.init; j++){
+                if(tabs.get(i).get(j).getValue()==0 && tabs.get(i).get(j).isEncader()){
+                    list_ret.add(new Result(i,j, this.tableauInitiale.get(i).get(j).getValue()));
+                }
+            }
+        }
+        return list_ret;
+    }
+
+    //-------------- get coût minimum de l’affectation
+    //-------------- coût minimal d'un tableau = côut maximal du tableau opposé
+    public int getCoutMinimal(List<Result> list_ret){
+        int ret = 0;
+        for (Result result: list_ret) {
+            ret = ret + result.getValue();
+        }
+        return ret;
+    }
+
+    //--------------------------- Coût maximal de l'affectation
+
+    //-------------- get coût minimum de l’affectation
+    //-------------- coût minimal d'un tableau = côut maximal du tableau opposé
+    public int getMaximalTableau(List<List<Case>> tabs){
+        int ret = 0;
+        for (int i = 0; i < this.init; i++) {
+            for (int j = 0; j < this.init; j++) {
+                if(ret < tabs.get(i).get(j).getValue()){
+                    ret = tabs.get(i).get(j).getValue();
+                }
+            }
+        }
+        return ret;
+    }
+
+    //-------------- get tab opposé du tableau initial
+    public List<List<Case>> getTabOpposer(List<List<Case>> tabs){
+        List<List<Case>> tableauPlus = new ArrayList<List<Case>>();
+        int max = this.getMaximalTableau(tabs);
+        for (int i = 0; i < this.init; i++) {
+            List<Case> tempList = new ArrayList<Case>();
+            for (int j = 0; j < this.init; j++) {
+                tempList.add(new Case(max - tabs.get(i).get(j).getValue()));
+            }
+            tableauPlus.add(tempList);
+        }
+        return tableauPlus;
+    }
+
 
 }
