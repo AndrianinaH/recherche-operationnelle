@@ -1,0 +1,76 @@
+/*-------- menu navbar --------------*/
+a{
+    cursor: pointer ;
+}
+.centreo{
+    margin: auto;
+    text-align: center;
+}
+
+.righteo{
+    position: relative;
+    float: right;
+    top:5px;
+}
+.my-dropdown{
+    width:250px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top:65px !important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: grey !important;
+}
+/*-------- fin menu navbar ----------*/
+.my-titre{
+    text-align: center;
+}
+.my-sous-titre{
+    text-align: center;
+    font-size: 1.50rem;
+    line-height: 110%;
+    font-weight: 500;
+}
+@media only screen and (max-width: 992px){
+    .hide-on-med-and-down {
+        display: block !important;
+    }
+}
+
+.modal{
+    overflow-y: initial !important;
+}
+
+.my-container{
+    margin: 10px;
+}
+
+.btn-floating.halfway-fab2{
+    position: absolute;
+    left: 20px;
+    bottom: -26px;
+}
+/* --------- menu badge --------- */
+span.badge {
+    font-size: 11px !important;
+}
+span.badge[data-badge-caption]::after {
+    font-size: 10px;
+}
+/* ---------------- home page ---------------- */
+body{
+    background-color: #fafafa !important;
+}
+.login-box{
+    padding: 32px 48px 0px 48px;
+    width:50%;
+    margin: auto;
+}
+
+/* ---------------- fin home page ------------ */
+
+
+
+
+
