@@ -8,10 +8,10 @@
         <br>
         <br>
         <div class="login-box">
-            <form>
+            <form method="POST" action="hongroise-init">
                 <p>Entrer la taille du tableau :</p>
                 <div class='input-field col s12'>
-                    <input type='number' id='number' value="init">
+                    <input type='number' id='number' name="init" required>
                     <label for='number'>Valeur</label>
                 </div>
 
@@ -24,23 +24,13 @@
                 </div>
             </form>
         </div>
-
     </div>
-
 </main>
-
-
-
 
 </body>
 </html>
 <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="assets/hammer.min.js"></script>
 <script type="text/javascript" src="assets/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
 
-    });
-
-</script>
 

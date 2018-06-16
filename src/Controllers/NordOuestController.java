@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/nord-ouest")
-public class NordOuestController {
+public class NordOuestController extends BaseController {
 
     //---------------------- Methode coin nord-ouest
 
@@ -21,7 +21,6 @@ public class NordOuestController {
         model.addObject("color", "cyan");
         model.addObject("title", "Recherche opérationnelle");
         model.addObject("titre", "Methode du coin Nord-Ouest");
-
         model.addObject("noLink", "active");
         return model;
     }

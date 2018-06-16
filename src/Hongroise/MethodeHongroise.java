@@ -12,6 +12,7 @@ public class MethodeHongroise {
 
     private List<List<Case>> tableauInitiale = new ArrayList<List<Case>>();;
     private int init = 5;
+    private int coutMinimalAffecation = 0;
 
 
     //------------------------------- Initialisation
@@ -44,6 +45,14 @@ public class MethodeHongroise {
 
     public void setInit(int init) {
         this.init = init;
+    }
+
+    public int getCoutMinimalAffecation() {
+        return coutMinimalAffecation;
+    }
+
+    public void setCoutMinimalAffecation(int coutMinimalAffecation) {
+        this.coutMinimalAffecation = coutMinimalAffecation;
     }
 
     //---------------------------- Afficher Tableau
@@ -107,13 +116,15 @@ public class MethodeHongroise {
     //----------------------------- Final
 
     //------------- minimisation
-    public void minimisationAffectation(List<List<Case>> tabs){
+    public int minimisationAffectation(List<List<Case>> tabs){
         this.methodeHongroise(tabs);
+        return this.getCoutMinimalAffecation();
     }
     //------------- maximisation
-    public void maximisationAffectation(List<List<Case>> tabs){
+    public int maximisationAffectation(List<List<Case>> tabs){
         List<List<Case>> tabOpposer = this.getTabOpposer(tabs);
-        this.methodeHongroise(tabOpposer);
+       this.methodeHongroise(tabOpposer);
+        return this.getCoutMinimalAffecation();
     }
 
     public void methodeHongroise(List<List<Case>> tabs){
@@ -131,8 +142,8 @@ public class MethodeHongroise {
             this.afficherTableau(this.tableauInitiale);
             //--------------- get cout minimum
             List<Result> result = this.getResult(tableau);
-            int coutMinimalAffecation = this.getCoutMinimal(result);
-            System.out.println("Cout minimal de l'affectation est : "+ coutMinimalAffecation);
+            this.setCoutMinimalAffecation(this.getCoutMinimal(result));
+
         }else{
             //------------ Etape 2
             System.out.println("tsy vita miditra Etape 2");

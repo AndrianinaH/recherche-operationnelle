@@ -67,6 +67,10 @@ body{
     width:50%;
     margin: auto;
 }
+.tableau-box{
+    padding: 32px 48px 0px 48px;
+    margin: auto;
+}
 
 /* ---------------- fin home page ------------ */
 
