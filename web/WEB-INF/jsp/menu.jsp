@@ -24,9 +24,9 @@
             <!-- fin nav wrapper -->
             <div class="nav-content">
                 <ul class="tabs ${color} darken-1 tabs-fixed-width tabs-transparent">
-                    <li class="tab"><a target="_self" class="${hongroiseLink}" href="/">Methode Hongroise</a></li>
-                    <li class="tab"><a target="_self" class="${noLink}" href="/nord-ouest">Coin Nord-Ouest</a></li>
-                    <li class="tab"><a target="_self" class="${simplexLink}" href="/">Simplex pln</a></li>
+                    <li class="tab"><a target="_self" class="${hongroiseLink}" href="/">Problème d'affectation</a></li>
+                    <li class="tab"><a target="_self" class="${noLink}" href="/nord-ouest">Problème de transport</a></li>
+                    <li class="tab"><a target="_self" class="${simplexLink}" href="/">Simplex</a></li>
                     <li class="tab"><a target="_self" class="${gomoryLink}" href="/">Simplex Coupe de Gomory</a></li>
 
 

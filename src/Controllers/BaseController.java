@@ -13,7 +13,8 @@ import java.util.Map;
 @Controller
 public class BaseController {
 
-    public int[][] buildMatrixByParams(Map<String,String> allRequestParams, int init){
+    //--------- probleme d'affectation
+    public int[][] buildIntMatrixByParams(Map<String,String> allRequestParams, int init){
         int[][] ret = new int[init][];
         for (int i = 0; i < init; i++) {
             int[] temp = new int[init];
@@ -22,6 +23,27 @@ public class BaseController {
                 temp[j] = Integer.parseInt(allRequestParams.get("tab"+i+j));
             }
             ret[i]= temp;
+        }
+        return ret;
+    }
+    //--------- probleme de transport
+    public double[][] buildDoubleMatrixByParams(Map<String,String> allRequestParams, int ligne, int colonne){
+        double[][] ret = new double[ligne][];
+        for (int i = 0; i < ligne; i++) {
+            double[] temp = new double[colonne];
+            for (int j = 0; j < colonne; j++) {
+//                System.out.println("tab"+i+j+" = "+allRequestParams.get("tab"+i+j));
+                temp[j] = Double.parseDouble(allRequestParams.get("tab"+i+j));
+            }
+            ret[i]= temp;
+        }
+        return ret;
+    }
+
+    public double[] buildDoubleTabByParams(Map<String,String> allRequestParams, int ligne, String name){
+        double[] ret = new double[ligne];
+        for (int i = 0; i < ligne; i++) {
+            ret[i] = Double.parseDouble(allRequestParams.get(name+i));
         }
         return ret;
     }

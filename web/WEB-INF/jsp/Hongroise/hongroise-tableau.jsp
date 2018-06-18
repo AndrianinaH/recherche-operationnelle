@@ -1,4 +1,5 @@
 <%@include file="../menu.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!----------------------- index ------------------------>
 <main>
     <div class="container">
@@ -15,8 +16,8 @@
                     <div class="row">
                         <s:forEach var="j" begin="0" end="${init-1}">
                             <div class='input-field col s2'>
-                                <input type='number' id='number' name="tab${i}${j}" required>
-                                <label for='number'>tab${i}${j}</label>
+                                <input type='number' id='tab${i}${j}' name="tab${i}${j}" required>
+                                <label for='tab${i}${j}'>tab${i}${j}</label>
                             </div>
                         </s:forEach>
                     </div>

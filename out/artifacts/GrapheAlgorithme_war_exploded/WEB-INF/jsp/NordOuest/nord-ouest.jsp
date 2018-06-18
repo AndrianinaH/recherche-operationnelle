@@ -1,4 +1,5 @@
 <%@include file="../menu.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     <!----------------------- index ------------------------>
 <main>
     <div class="container">
@@ -8,11 +9,16 @@
         <br>
         <br>
         <div class="login-box">
-            <form>
-                <p>Entrer la taille du tableau :</p>
-                <div class='input-field col s12'>
-                    <input type='number' id='number' value="init">
-                    <label for='number'>Valeur</label>
+            <form method="POST" action="nord-ouest-init">
+                <p>Entrer le nombre de ligne du tableau :</p>
+                <div class='input-field col s6'>
+                    <input type='number' id='ligne' name="ligne">
+                    <label for='ligne'>Ligne</label>
+                </div>
+                <p>Entrer le nombre de colonne du tableau :</p>
+                <div class='input-field col s6'>
+                    <input type='number' id='colonne' name="colonne">
+                    <label for='colonne'>Colonne</label>
                 </div>
 
                 <div class="my-divider"></div>

@@ -15,12 +15,11 @@ import java.util.Map;
  */
 
 @Controller
-@RequestMapping("/")
 public class IndexController extends BaseController {
 
     //---------------------- Methode hongroise
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping("/")
     public ModelAndView index() throws Exception {
         ModelAndView model = new ModelAndView("Hongroise/index");
         model.addObject("color", "indigo");
@@ -32,7 +31,7 @@ public class IndexController extends BaseController {
 
     //----------- recuperation du init
     @RequestMapping(value="/hongroise-init", method = RequestMethod.POST)
-    public ModelAndView init(@RequestParam(value="init") int init) throws Exception {
+    public ModelAndView init(@RequestParam("init") int init) throws Exception {
         ModelAndView model = new ModelAndView("Hongroise/hongroise-tableau");
         model.addObject("color", "indigo");
         model.addObject("title", "Recherche opérationnelle");
@@ -49,9 +48,9 @@ public class IndexController extends BaseController {
 //          tab12=10, tab13=5, tab14=10, tab20=12, tab21=15, tab22=14, tab23=11,
 //          tab24=5, tab30=4, tab31=8, tab32=14, tab33=17, tab34=13, tab40=13,
 //          tab41=9, tab42=8, tab43=12, tab44=17, init=5}
-
-        int[][] matrix = this.buildMatrixByParams(allRequestParams, Integer.parseInt(allRequestParams.get("init")));
-        MethodeHongroise methodeHongroise = new MethodeHongroise();
+        int init = Integer.parseInt(allRequestParams.get("init"));
+        int[][] matrix = this.buildIntMatrixByParams(allRequestParams, init);
+        MethodeHongroise methodeHongroise = new MethodeHongroise(init);
         methodeHongroise.setTableauInitiale(matrix);
         methodeHongroise.afficherTableau(methodeHongroise.getTableauInitiale());
         //----------- minimisation
@@ -70,8 +69,6 @@ public class IndexController extends BaseController {
         model.addObject("tableauInitial", methodeHongroise.getTableauInitiale());
         model.addObject("minimal", minimal);
         model.addObject("maximal", maximal);
-
-
 
         return model;
     }
