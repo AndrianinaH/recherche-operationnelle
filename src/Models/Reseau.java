@@ -446,6 +446,7 @@ public class Reseau<T> {
         }
         return res;
     }
+
     public void displayTab(double[] tab) {
         System.out.print("| ");
         System.out.print(tab[0]);

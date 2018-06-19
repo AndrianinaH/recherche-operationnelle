@@ -28,6 +28,7 @@
                     <li class="tab"><a target="_self" class="${noLink}" href="/nord-ouest">Problème de transport</a></li>
                     <li class="tab"><a target="_self" class="${simplexLink}" href="/">Simplex</a></li>
                     <li class="tab"><a target="_self" class="${gomoryLink}" href="/">Simplex Coupe de Gomory</a></li>
+                    <li class="tab"><a target="_self" class="${neuroneLink}" href="/neurone">Réseau de neurone</a></li>
 
 
 

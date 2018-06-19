@@ -9,27 +9,25 @@
         <br>
         <br>
         <div class="centreo">
-            <p>Tableau de valeur :</p>
+            <h5 class="${color}-text text-darken-3">Résultat de la prédiction</h5>
+            <p> Valeurs d'entrée:</p>
             <table class="striped centered">
-                <s:forEach var="tab" items="${tableauInitial}">
-                    <tr>
-                        <s:forEach var="data" items="${tab}">
-                            <td>${data.getValue()}</td>
-                        </s:forEach>
-                    </tr>
-                </s:forEach>
+                <tr>
+                    <s:forEach var="data" items="${entrerPredits}">
+                        <td>${data}</td>
+                    </s:forEach>
+                </tr>
             </table>
-        </div>
-        <div class="centreo">
             <br>
             <br>
-            <p class="my-titre {{color}}-text text-darken-3">
-                La valeur minimal de l'affectation est : <b>${minimal}</b>
-            </p>
-            <br>
-            <p class="my-titre {{color}}-text text-darken-3">
-                La valeur maximal de l'affectation est : <b>${maximal}</b>
-            </p>
+            <p> Valeurs de sortie:</p>
+            <table class="striped centered">
+                <tr>
+                    <s:forEach var="data" items="${sortiePredits}">
+                        <td>${data[0]}</td>
+                    </s:forEach>
+                </tr>
+            </table>
         </div>
 
     </div>

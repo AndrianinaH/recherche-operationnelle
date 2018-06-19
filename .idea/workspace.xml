@@ -3,25 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="485bf684-bec7-45c1-9dd1-5a8bedc1200c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/BaseController.class" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/BaseController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/IndexController.class" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/NordOuestController.class" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Controllers/NordOuestController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Models/Reseau.class" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/classes/Models/Reseau.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/BaseController.class" afterPath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/BaseController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/IndexController.class" afterPath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/NordOuestController.class" afterPath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Controllers/NordOuestController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Models/Reseau.class" afterPath="$PROJECT_DIR$/out/production/GrapheAlgorithme/Models/Reseau.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GrapheAlgorithme.iml" afterPath="$PROJECT_DIR$/GrapheAlgorithme.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/hongroise-result.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/hongroise-result.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/Hongroise/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/NordOuest/nord-ouest.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/menu.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/jsp/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/GrapheAlgorithme_war_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/BaseController.java" afterPath="$PROJECT_DIR$/src/Controllers/BaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/IndexController.java" afterPath="$PROJECT_DIR$/src/Controllers/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/NordOuestController.java" afterPath="$PROJECT_DIR$/src/Controllers/NordOuestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/Reseau.java" afterPath="$PROJECT_DIR$/src/Models/Reseau.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-result.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-result.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/style.css" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,22 +49,47 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Reseau.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/Reseau.java">
+      <file leaf-file-name="ReseauController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/ReseauController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="400" column="41" lean-forward="false" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="41" />
+            <state relative-caret-position="309">
+              <caret line="61" column="92" lean-forward="false" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReseauMain.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main/ReseauMain.java">
+      <file leaf-file-name="reseau-result.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-result.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-328">
-              <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="61" />
+            <state relative-caret-position="374">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reseau.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" column="101" lean-forward="false" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="85" column="29" lean-forward="false" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+              <folding>
+                <element signature="method#buildIntMatrixByParams#0;class#BaseController#0" expanded="false" />
+                <element signature="method#buildDoubleMatrixByParams#0;class#BaseController#0" expanded="false" />
+                <element signature="method#buildDoubleTabByParams#0;class#BaseController#0" expanded="false" />
+                <element signature="method#buildListDoubleByParams#0;class#BaseController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +102,8 @@
         <option value="AnnotationType" />
         <option value="spring-beans.schema" />
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -94,6 +125,9 @@
       <find>tableauInitiale</find>
       <find>tableauInitial</find>
       <find>readFile</find>
+      <find>retropropagation</find>
+      <find>pro</find>
+      <find>setSortieSommets</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/Models/Matrice.java" />
         <option value="$PROJECT_DIR$/src/Models/Arbre.java" />
         <option value="$PROJECT_DIR$/src/Main/ReseauMain.java" />
-        <option value="$PROJECT_DIR$/src/Models/Reseau.java" />
         <option value="$PROJECT_DIR$/src/Models/Sommet.java" />
         <option value="$PROJECT_DIR$/src/Models/Graph.java" />
         <option value="$PROJECT_DIR$/src/Models/Arc.java" />
@@ -120,28 +153,34 @@
         <option value="$PROJECT_DIR$/src/Hongroise/TableauHongroise.java" />
         <option value="$PROJECT_DIR$/src/Hongroise/Case.java" />
         <option value="$PROJECT_DIR$/src/Hongroise/Result.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/contexte.xml" />
         <option value="$PROJECT_DIR$/GrapheAlgorithme.iml" />
         <option value="$PROJECT_DIR$/src/Controllers/HelloController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/tableau.jsp" />
         <option value="$PROJECT_DIR$/src/Main/HongroiseMain.java" />
         <option value="$PROJECT_DIR$/src/Hongroise/MethodeHongroise.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" />
         <option value="$PROJECT_DIR$/src/Main/NordOuestMain.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp" />
+        <option value="$PROJECT_DIR$/web/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Controllers/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/NordOuest/NordOuest.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-init.jsp" />
+        <option value="$PROJECT_DIR$/src/Models/Reseau.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-result.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/index.jsp" />
-        <option value="$PROJECT_DIR$/web/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" />
-        <option value="$PROJECT_DIR$/src/Controllers/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/Controllers/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/NordOuest/NordOuest.java" />
-        <option value="$PROJECT_DIR$/src/Controllers/NordOuestController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/Controllers/BaseController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-tableau.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-result.jsp" />
+        <option value="$PROJECT_DIR$/src/Controllers/ReseauController.java" />
+        <option value="$PROJECT_DIR$/src/Controllers/NordOuestController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau.jsp" />
       </list>
     </option>
   </component>
@@ -180,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,6 +228,98 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Neurone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hongroise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,8 +387,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrapheAlgorithme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -267,21 +416,21 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/Logiciel utile/Java/servlet-api.jar!/" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="F:/Logiciel utile/Java/commons-fileupload-1.3.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspaceJEE\GrapheAlgorithme\web\WEB-INF\jsp\Hongroise" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspaceJEE\GrapheAlgorithme\web\WEB-INF\jsp\NordOuest" />
       <recent name="D:\workspaceJEE\GrapheAlgorithme\web" />
       <recent name="D:\workspaceJEE\GrapheAlgorithme\web\assets" />
       <recent name="D:\workspaceJEE\GrapheAlgorithme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspaceJEE\GrapheAlgorithme\web\WEB-INF\jsp\Hongroise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -921,11 +1070,13 @@
       <workItem from="1529061400331" duration="9586000" />
       <workItem from="1529158021505" duration="5242000" />
       <workItem from="1529309271202" duration="12586000" />
+      <workItem from="1529402632926" duration="13140000" />
+      <workItem from="1529424405943" duration="5486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151852000" />
+    <option name="totallyTimeSpent" value="170478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,7 +1089,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -952,7 +1102,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3488624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35211268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -960,10 +1110,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22426869" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28710726" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23212379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23745997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -997,7 +1147,7 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1006,56 +1156,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Models/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Sommet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Arc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Sommet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Arc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Dossier Andrianina/Université/S4/Algorithmique/ArbreBR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1185,14 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GrapheAlgorithme.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1200,51 +1292,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/HongroiseMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="12" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="22" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="90" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,49 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
-          <folding>
-            <element signature="method#setTableauInitiale#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#setCoutMinimalAffecation#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#afficherTableau#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#minimisationAffectation#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#maximisationAffectation#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#methodeHongroise#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#soustraireMin#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getMin#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#reverseTableau#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#copieList#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#encadrerZero#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#ligneEncadrable#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#barrerZeroLigne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#barrerZeroColonne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#isFinish#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#isFinishLine#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#isFinishColonne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#marquer#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#marquerColonne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#marquerLigne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#rayer#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#rayerLigne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#testLigneRayable#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#rayerColonne#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#testColonneRayable#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getMinSousTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#soustraireMinAuTableauRestant#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#ajouterMinAuCaseMarquer2#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#reninitMarquage#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getResult#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getCoutMinimal#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getMaximalTableau#0;class#MethodeHongroise#0" expanded="false" />
-            <element signature="method#getTabOpposer#0;class#MethodeHongroise#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="1" column="86" lean-forward="false" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,33 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="26" column="87" lean-forward="false" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,47 +1325,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1376">
           <caret line="189" column="5" lean-forward="false" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding>
-            <element signature="method#eligibleSolution#0;class#NordOuest#0" expanded="false" />
-            <element signature="method#lowestMC#0;class#NordOuest#0" expanded="false" />
-            <element signature="method#updateSolutions#0;class#NordOuest#0" expanded="false" />
-            <element signature="method#marginalCost#0;class#NordOuest#0" expanded="false" />
-            <element signature="method#run#0;class#NordOuest#0" expanded="false" />
-            <element signature="method#display#0;class#NordOuest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/NordOuestController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controllers/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="1168">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="30" column="110" lean-forward="false" selection-start-line="30" selection-start-column="110" selection-end-line="30" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Save/reseau.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Logiciel utile/Java/jakarta-taglibs-standard-1.1.2/lib/standard.jar!/org/apache/taglibs/standard/tag/rt/core/ForEachTag.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Logiciel utile/Java/jakarta-taglibs-standard-1.1.2/lib/jstl.jar!/javax/servlet/jsp/jstl/core/LoopTagSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-tableau.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/NordOuest/nord-ouest-tableau.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="665">
+          <caret line="85" column="29" lean-forward="false" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#buildIntMatrixByParams#0;class#BaseController#0" expanded="false" />
+            <element signature="method#buildDoubleMatrixByParams#0;class#BaseController#0" expanded="false" />
+            <element signature="method#buildDoubleTabByParams#0;class#BaseController#0" expanded="false" />
+            <element signature="method#buildListDoubleByParams#0;class#BaseController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/Reseau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="400" column="41" lean-forward="false" selection-start-line="400" selection-start-column="33" selection-end-line="400" selection-end-column="41" />
+        <state relative-caret-position="190">
+          <caret line="198" column="79" lean-forward="false" selection-start-line="198" selection-start-column="79" selection-end-line="198" selection-end-column="79" />
+          <folding>
+            <element signature="method#setWeights#0;class#Reseau#0" expanded="false" />
+            <element signature="method#setWeights#1;class#Reseau#0" expanded="false" />
+            <element signature="method#reverseBuildListSommets#0;class#Reseau#0" expanded="false" />
+            <element signature="method#reverseBuildListArcs#0;class#Reseau#0" expanded="false" />
+            <element signature="method#buildSommets#0;class#Reseau#0" expanded="false" />
+            <element signature="method#buildArcs#0;class#Reseau#0" expanded="false" />
+            <element signature="method#buildArcPerCouche#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getSortie#0;class#Reseau#0" expanded="false" />
+            <element signature="method#produitMatriciel#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getWeightsMatrix#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getWeightPerEntry#0;class#Reseau#0" expanded="false" />
+            <element signature="method#propagationEnAvant#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getSortie#1;class#Reseau#0" expanded="false" />
+            <element signature="method#getEntree#0;class#Reseau#0" expanded="false" />
+            <element signature="method#setSortieSommets#0;class#Reseau#0" expanded="false" />
+            <element signature="method#setEntree#0;class#Reseau#0" expanded="false" />
+            <element signature="method#calculErreur#0;class#Reseau#0" expanded="false" />
+            <element signature="method#deriveCoucheFin#0;class#Reseau#0" expanded="false" />
+            <element signature="method#deriveCoucheCache#0;class#Reseau#0" expanded="false" />
+            <element signature="method#correctWeight#0;class#Reseau#0" expanded="false" />
+            <element signature="method#retropropagation#0;class#Reseau#0" expanded="false" />
+            <element signature="method#readFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#writeFileTxt#0;class#Reseau#0" expanded="false" />
+            <element signature="method#writeFileCSV#0;class#Reseau#0" expanded="false" />
+            <element signature="method#extractPoidsFinal#0;class#Reseau#0" expanded="false" />
+            <element signature="method#listDoubleToListString#0;class#Reseau#0" expanded="false" />
+            <element signature="method#buildReseauByFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getDataByFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getLayerByFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getDoubleArrayByFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#getWeightByFile#0;class#Reseau#0" expanded="false" />
+            <element signature="method#convertTab#0;class#Reseau#0" expanded="false" />
+            <element signature="method#displayTab#0;class#Reseau#0" expanded="false" />
+            <element signature="method#afficherReseau#0;class#Reseau#0" expanded="false" />
+            <element signature="method#networkLearning#0;class#Reseau#0" expanded="false" />
+            <element signature="method#oneLearning#0;class#Reseau#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Hongroise/hongroise-result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-tableau.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="54" column="55" lean-forward="false" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/ReseauMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-328">
-          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="61" />
+        <state relative-caret-position="44">
+          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/NordOuestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="50" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/ReseauController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="61" column="92" lean-forward="false" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau-result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Neurone/reseau.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="101" lean-forward="false" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
           <folding />
         </state>
       </provider>
@@ -1443,7 +1589,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>GrapheAlgorithme</last-edited>
+          <last-edited>Spring|GrapheAlgorithme</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1467,7 +1613,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>servlet-api</last-edited>
+          <last-edited>commons-fileupload-1.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

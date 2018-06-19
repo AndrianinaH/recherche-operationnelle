@@ -3,7 +3,7 @@
     <!----------------------- index ------------------------>
 <main>
     <div class="container">
-        <h5 class="my-titre {{color}}-text text-darken-3">
+        <h5 class="my-titre ${color}-text text-darken-3">
             <b>${titre}</b>
         </h5>
         <br>
