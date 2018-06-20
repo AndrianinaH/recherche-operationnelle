@@ -14,7 +14,7 @@ public class SimplexMain {
     public static void main(String[] args) throws Exception {
 
         //-------------- initialisation
-        String contraintes = "x + y <= 5;10x + 6y <= 45";
+        String contraintes = "x + y <= 5;10x + 6y <= 45;3x + 2y <= 13";
         String z = "Z= 5x + 4y";
 
         SimplexeService simplexeService = new SimplexeService();
@@ -23,7 +23,7 @@ public class SimplexMain {
         GomoryService gomoryService = new GomoryService();
         ResultatNEGomory resultatNEGomory = gomoryService.calculerNEGomory(z,contraintes,new ArrayList<>());
 
-        System.out.println("wawawa");
+        System.out.println("fin calcul");
 
     }
 }

@@ -60,10 +60,5 @@
 <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="assets/hammer.min.js"></script>
 <script type="text/javascript" src="assets/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
 
-    });
-
-</script>
 

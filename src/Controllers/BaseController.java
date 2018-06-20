@@ -1,6 +1,7 @@
 package Controllers;
 
 import Hongroise.MethodeHongroise;
+import Simplex.Math.MathUtil;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.multipart.MultipartFile;
@@ -86,5 +87,15 @@ public class BaseController {
         if(newFile.exists()) newFile.delete();
         file.transferTo(newFile);
         return newFile;
+    }
+
+    //------- simplex et gomory
+    public String[] arrondirDoubleTab(double[] tab, int type){ // 1 = simplex et 2 = gomory
+        String[] ret = new String[tab.length];
+        for (int i = 0; i < tab.length; i++) {
+            if(type == 1) ret[i] = MathUtil.formatNumber(tab[i]);
+            else  ret[i] = MathUtil.roundDecimal(tab[i]);
+        }
+        return ret;
     }
 }

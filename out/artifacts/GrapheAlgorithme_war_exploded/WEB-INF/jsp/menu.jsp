@@ -26,12 +26,9 @@
                 <ul class="tabs ${color} darken-1 tabs-fixed-width tabs-transparent">
                     <li class="tab"><a target="_self" class="${hongroiseLink}" href="/">Problème d'affectation</a></li>
                     <li class="tab"><a target="_self" class="${noLink}" href="/nord-ouest">Problème de transport</a></li>
-                    <li class="tab"><a target="_self" class="${simplexLink}" href="/">Simplex</a></li>
-                    <li class="tab"><a target="_self" class="${gomoryLink}" href="/">Simplex Coupe de Gomory</a></li>
+                    <li class="tab"><a target="_self" class="${simplexLink}" href="/simplex">Programmation linéraire (PL)</a></li>
+                    <li class="tab"><a target="_self" class="${gomoryLink}" href="/gomory">PL en nombre entier</a></li>
                     <li class="tab"><a target="_self" class="${neuroneLink}" href="/neurone">Réseau de neurone</a></li>
-
-
-
                 </ul>
             </div>
             <!-- fin nav-content -->
