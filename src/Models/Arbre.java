@@ -8,6 +8,7 @@ import java.util.*;
 public class Arbre<T> extends HashMap<T,T>
 {
     T racine;
+
     public Arbre(){}
     public Arbre(T racine)
     {
@@ -25,12 +26,15 @@ public class Arbre<T> extends HashMap<T,T>
         return containsKey(value);
     }
 
-    public void ajouter(T key,T value)
-    {
+    public void ajouter(T key,T value) {
         if(!findKey(key))
         {
             put(key,value);
         }
+    }
+
+    public boolean ifExist(T noeud) {
+        return this.containsKey(noeud) || this.containsValue(noeud) || noeud == null;
     }
 
     public void supprimer(T value)
@@ -41,6 +45,11 @@ public class Arbre<T> extends HashMap<T,T>
     public boolean isFeuille(T value)
     {
         return this.containsValue(value);
+    }
+
+    public void afficher() {
+        System.out.println(this.keySet());
+        System.out.println(this.values());
     }
 
 }

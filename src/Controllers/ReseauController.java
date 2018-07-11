@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ public class ReseauController extends BaseController {
         return model;
     }
 
-    //----------- recuperation du init
+    //----------- recuperation du init pour apprentissage
     @RequestMapping(value="/neurone-init", method = RequestMethod.POST)
     public ModelAndView init(@RequestParam("entrer") int entrer,
                              @RequestParam("dataParEntrer") int dataParEntrer,
@@ -53,6 +54,20 @@ public class ReseauController extends BaseController {
         model.addObject("seuil", seuil);
         model.addObject("alpha", alpha);
 
+        return model;
+    }
+
+    //----------- recuperation du init pour prédiction
+    @RequestMapping(value="/neurone-prediction-init", method = RequestMethod.POST)
+    public ModelAndView predictInit(@RequestParam("dataParEntrer") int dataParEntrer) throws Exception {
+
+        //----------- afficher solutions
+        ModelAndView model = new ModelAndView("Neurone/reseau-prediction");
+        model.addObject("color", "teal");
+        model.addObject("title", "Network Learning");
+        model.addObject("titre", "Réseau de neurone");
+        model.addObject("neuroneLink", "active");
+        model.addObject("dataParEntrer", dataParEntrer);
         return model;
     }
 
@@ -84,6 +99,28 @@ public class ReseauController extends BaseController {
 
         //---------- extract CSV
         reseau.extractPoidsFinal(csvConfig);
+
+        //----------- afficher solutions
+        ModelAndView model = new ModelAndView("Neurone/reseau-prediction");
+        model.addObject("color", "teal");
+        model.addObject("title", "Network Learning");
+        model.addObject("titre", "Réseau de neurone");
+        model.addObject("neuroneLink", "active");
+        model.addObject("dataParEntrer", dataParEntrer);
+
+        return model;
+    }
+
+    @RequestMapping(value="/neurone-prediction", method = RequestMethod.POST)
+    public ModelAndView predict(@RequestParam Map<String,String> allRequestParams,
+                                @RequestParam("file") MultipartFile file) throws Exception {
+        //--------------- initialisation
+        int dataParEntrer = Integer.parseInt(allRequestParams.get("dataParEntrer"));
+
+        Reseau<Integer> reseau = new Reseau<>();
+        File csvConfig = this.convertSpringFile(file);
+        reseau.buildReseauByFile(csvConfig);
+        csvConfig.delete();
 
         //---------- prédiction
         double[] inputGiven = this.buildDoubleTabByParams(allRequestParams,dataParEntrer,"entrerPredit");

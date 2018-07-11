@@ -48,7 +48,7 @@ public class GomoryController extends BaseController{
 
         //----------- afficher solutions
         ModelAndView model = new ModelAndView("Gomory/gomory-result");
-        model.addObject("color", "red");
+        model.addObject("color", "blue");
         model.addObject("title", "Programmation linéaire en nombre entier");
         model.addObject("titre", "Methode coupe de gomory");
         model.addObject("gomoryLink", "active");

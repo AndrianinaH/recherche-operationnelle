@@ -13,8 +13,7 @@ public class Graph<T> {
     private List<Arc<T>> arcs;
     File<Sommet<T>> file = new File<>(50);
 
-    public Graph() {
-    }
+    public Graph() {}
 
     public Graph(List<Sommet<T>> sommets, List<Arc<T>> arcs) {
         this.sommets = sommets;
@@ -76,7 +75,6 @@ public class Graph<T> {
     }
 
     //--------- supprimer arc
-    public void deleteArc(){}
     public void deleteArc(Arc<T> newArc){
         for(int i=0; i< arcs.size(); i++){
             if(arcs.get(i).getDepart().getId() == arcs.get(i).getDepart().getId() && arcs.get(i).getArrivee().getId() == arcs.get(i).getArrivee().getId()){
@@ -97,6 +95,17 @@ public class Graph<T> {
         }
         return allSuccesseur;
     }
+    //------------ Successeur et predecesseur
+    public List<Arc<T>> getSuccesseurs(List<Arc<T>> arcs, Sommet<T> sommet) {
+        List<Arc<T>> res = new ArrayList();
+        for (Arc arc : arcs) {
+            if (arc.getDepart().getInfo().equals(sommet.getInfo())) {
+                res.add(arc);
+            }
+        }
+        return res;
+    }
+
     public List<Sommet> getPredecesseurs(Sommet predecesseur){
         List<Sommet> allPredecesseur = new ArrayList<Sommet>();
         for(Arc arc : getArcs()){
@@ -105,6 +114,16 @@ public class Graph<T> {
             }
         }
         return allPredecesseur;
+    }
+
+    public List<Arc<T>> getPredecesseurs(List<Arc<T>> arcs, Sommet<T> sommet) {
+        List<Arc<T>> res = new ArrayList();
+        for (Arc arc : arcs) {
+            if (arc.getArrivee().getInfo().equals(sommet.getInfo())) {
+                res.add(arc);
+            }
+        }
+        return res;
     }
 
     //----------- matrice
@@ -230,7 +249,37 @@ public class Graph<T> {
     }
 
     // ------- chemin le plus court Dijkrista ----------------
-    public Arbre<T> plusCourtChemin(Sommet<T> sommet){
+    public void plusCourtChemin(Sommet<T> depart, Sommet<T> arrive) throws Exception {
+        Arbre<T> arbres = this.dijkstra(depart);
+        if (arbres.ifExist(arrive.getInfo())) {
+            T noeudVisite = arrive.getInfo();
+            for (int j = 0; j < arbres.size(); j++) {
+                List<Sommet<T>> noeuds = this.getSommets();
+                noeuds.get(this.indiceNoeud(noeuds, noeudVisite)).setColor("214;15;15");
+                System.out.println(noeuds.get(this.indiceNoeud(noeuds, noeudVisite)).getInfo());
+                if (noeudVisite.equals(depart.getInfo())) {
+                    break;
+                }
+
+                noeudVisite = arbres.get(noeudVisite);
+            }
+        } else {
+            throw new Exception("Chemin Impossible");
+        }
+    }
+
+    public int indiceNoeud(List<Sommet<T>> noeuds, T noeud) {
+        int indice = 0;
+        for (int i = 0; i < noeuds.size(); i++) {
+            if (noeuds.get(i).getInfo().equals(noeud)) {
+                indice = i;
+                break;
+            }
+        }
+        return indice;
+    }
+
+    public Arbre<T> dijkstra(Sommet<T> sommet){
         Arbre<T> arbre = new Arbre(sommet.getInfo());
         List<Sommet<T>> file_priorite = new ArrayList<Sommet<T>>();
         sommet.setPoids(0);
@@ -279,26 +328,153 @@ public class Graph<T> {
         return res;
     }
 
-    // ------- chemin le plus long ----------------
-    public void plusLongChemin(Arbre<Sommet> arbre) {
-
+    public List<Sommet<T>> decompEnNiveau() {
+        List<Sommet<T>> noeudNiveau = new ArrayList();
+        List<Sommet<T>> sommets = new ArrayList(this.getSommets());
+        List<Arc<T>> arcs = new ArrayList(this.getArcs());
+        while (!sommets.isEmpty()) {
+            List<Sommet<T>> degreEntrantNonNull = this.degreEntrantNonNull(sommets, arcs);
+            for (Sommet<T> noeud : degreEntrantNonNull) {
+                List<Sommet> successeurs = this.getSuccesseurs(noeud);
+                for (Sommet<T> successeur : successeurs) {
+                    if (successeur.getNiveau() < noeud.getNiveau() + 1) {
+                        successeur.setNiveau(noeud.getNiveau() + 1);
+                    }
+                    this.removeArc(noeud, successeur, arcs);
+                }
+                sommets.remove(noeud);
+                noeudNiveau.add(noeud);
+            }
+        }
+        return noeudNiveau;
     }
 
     //-------- coloration -------------------------
-    public void coloration(){
-
+    public void coloriage() throws Exception {
+        List<Sommet<T>> noeuds = new ArrayList(this.classementDegre(this).getSommets());
+//        String[] couleur = new String[]{"214;15;15", "29;158;27", "27;116;158"};
+        String[] couleur = new String[]{"rouge", "jaune", "vert"};
+        int indiceColor = 0;
+        while (!noeuds.isEmpty()) {
+            noeuds.get(0).setColor(couleur[indiceColor]);
+            List<Sommet<T>> voisins = this.voisinNoeud(noeuds.get(0), this);
+            noeuds.remove(noeuds.get(0));
+            for (Sommet noeud : noeuds) {
+                if (!voisins.contains(noeud)) {
+                    noeud.setColor(couleur[indiceColor]);
+                    voisins.addAll(this.voisinNoeud(noeud, this));
+                }
+            }
+            this.removeNoeudColore(noeuds);
+            indiceColor++;
+        }
     }
 
-    //-------- flot max ---------------------------
-    public void flotMax(){
-
+    //CLASSEMENT SOMMET PAR ORDRE DECROISSANT DE DEGRE
+    public Graph classementDegre(Graph g) {
+        List<Sommet<T>> noeuds = this.getSommets();
+        Sommet<T> temp;
+        for (int i = 0; i < noeuds.size(); i++) {
+            for (int j = i; j > 0; j--) {
+                if (noeuds.get(j).getDegre() > noeuds.get(j - 1).getDegre()) {
+                    temp = noeuds.get(j);
+                    noeuds.set(j, noeuds.get(j - 1));
+                    noeuds.set(j - 1, temp);
+                }
+            }
+        }
+        return g;
     }
 
-    //-------- ordononcement MPM -----------------
-    public void ordononcementMPM(){
-
+    //VOISIN D'UN NOEUD
+    public List<Sommet<T>> voisinNoeud(Sommet noeud,Graph g) {
+        List<Sommet<T>> res = new ArrayList();
+        List<Arc<T>> arcs = g.getArcs();
+        for (Arc<T> arc : arcs) {
+            if (!(noeud.getInfo().equals(arc.getDepart().getInfo()) && noeud.getInfo().equals(arc.getArrivee().getInfo()))) {
+                if (noeud.getInfo().equals(arc.getDepart().getInfo())) {
+                    res.add(arc.getArrivee());
+                }
+                if (noeud.getInfo().equals(arc.getArrivee().getInfo())) {
+                    res.add(arc.getDepart());
+                }
+            }
+        }
+        return res;
     }
 
+    //REMOVE NOEUD COLOR
+    public void removeNoeudColore(List<Sommet<T>> noeuds) {
+        List<Sommet<T>> noeudDelete = new ArrayList();
+        for (Sommet noeud : noeuds) {
+            if (!noeud.getColor().equals("blanc")) {
+                noeudDelete.add(noeud);
+            }
+        }
+        noeuds.removeAll(noeudDelete);
+    }
 
+    public void removeArc(Sommet<T> debut, Sommet<T> fin, List<Arc<T>> arcs) {
+        for (int i = 0; i < arcs.size(); i++) {
+            if (arcs.get(i).getDepart().getInfo() == debut.getInfo() && arcs.get(i).getArrivee().getInfo() == fin.getInfo()) {
+                arcs.remove(i);
+                break;
+            }
+        }
+    }
+
+    public List<Sommet<T>> degreEntrantNonNull(List<Sommet<T>> noeuds, List<Arc<T>> arcs) {
+        List<Sommet<T>> res = new ArrayList<>();
+        List<T> listeNoeudFin = this.noeudFin(arcs);
+        for (Sommet<T> noeud : noeuds) {
+            if (!listeNoeudFin.contains(noeud.getInfo())) {
+                res.add(noeud);
+            }
+        }
+        return res;
+    }
+
+    public List<T> noeudFin(List<Arc<T>> arcs) {
+        List<T> res = new ArrayList();
+        for (Arc<T> arc : arcs) {
+            res.add(arc.getArrivee().getInfo());
+        }
+        return res;
+    }
+
+    public Arc<T> arcExtremum(List<Arc<T>> arcs, String typeExtremum) {
+        Arc<T> res = null;
+        if (!arcs.isEmpty()) {
+            res = arcs.get(0);
+            if (typeExtremum.equals("maximum")) {
+                for (Arc arc : arcs) {
+                    int distanceRes = (int) (res.getDepart().getPoids() + res.getPoids());
+                    int distanceArc = (int) (arc.getDepart().getPoids() + arc.getPoids());
+                    if (distanceArc > distanceRes) {
+                        res = arc;
+                    }
+                }
+            } else {
+                for (Arc arc : arcs) {
+                    int distanceRes = (int) (res.getDepart().getPoids() - res.getPoids());
+                    int distanceArc = (int) (arc.getDepart().getPoids() - arc.getPoids());
+                    if (distanceArc < distanceRes) {
+                        res = arc;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+    public List<Sommet<T>> getNiveau(int niveau, List<Sommet<T>> listeNoeud) {
+        List<Sommet<T>> res = new ArrayList();
+        for (Sommet noeud : listeNoeud) {
+            if (noeud.getNiveau() == niveau) {
+                res.add(noeud);
+            }
+        }
+        return res;
+    }
 
 }

@@ -52,21 +52,11 @@
                 <input type="hidden" value="${alpha}" name="alpha" required>
                 <input type="hidden" value="${seuil}" name="seuil" required>
                 <br>
-                <h5 class="${color}-text text-darken-3">Prédiction</h5>
-                <p>Les entrées à prédire :</p>
-                    <div class="row">
-                        <s:forEach var="i" begin="0" end="${dataParEntrer-1}">
-                            <div class='input-field col s2'>
-                                <input type='text' id='entrerPredit${i}' name="entrerPredit${i}" required>
-                                <label for='entrerPredit${i}'>entrer à prédire ${i}</label>
-                            </div>
-                        </s:forEach>
-                    </div>
                 <div class="my-divider"></div>
                 <br>
                 <div class="centreo">
                     <div class='row'>
-                        <button type='submit' class='col s12 btn btn-large waves-effect ${color} darken-3'>Calculer</button>
+                        <button type='submit' class='col s12 btn btn-large waves-effect ${color} darken-3'>Apprentissage</button>
                     </div>
                 </div>
             </form>
